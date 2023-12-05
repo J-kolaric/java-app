@@ -57,7 +57,7 @@ jobs:
         with:
           method: service-account
           k8s-url: ${{ secrets.SERVER }}
-          k8s-secret: ${{ secrets.CA_CERT }}
+          k8s-secret: ${{ secrets.KUBERNETES_SECRET }}
             
       - name: Checkout source code
         uses: actions/checkout@v3
