@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: github-action-deployment
+  name: github-action-deployment
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: github-action-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: github-action-deployment
+    spec:
+      containers:
+      - image: harbor.jkolaric.eu/tbs/github-actions-did-it-twice:1.1
+        name: github-actions-did-it-twice
+        resources: {}
+status: {}
