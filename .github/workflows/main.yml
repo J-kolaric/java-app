@@ -34,8 +34,8 @@ jobs:
           namespace: ${{ secrets.NAMESPACE }}
           # image config
           destination: harbor.jkolaric.eu/tbs/github-actions-did-it
-          env: |
-            BP_JAVA_VERSION=17
+          #env: |
+            #BP_JAVA_VERSION=17
     
       - name: Do something with image
         run: |
