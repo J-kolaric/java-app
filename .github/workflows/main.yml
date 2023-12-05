@@ -34,7 +34,7 @@ jobs:
           ca_cert: ${{ secrets.CA_CERT }}
           namespace: ${{ secrets.NAMESPACE }}
           # image config
-          destination: harbor.jkolaric.eu/tbs/custom-afklm-packages-from-github-actions:1.1
+          destination: harbor.jkolaric.eu/tbs/custom-afklm-packages-from-github-actions:${{ github.sha }}
           # cluster builder config
           clusterbuilder: custom-afklm-packages
           env: |
@@ -70,4 +70,4 @@ jobs:
             kubernetes/deployment.yaml
             kubernetes/service.yaml
           images: |
-            harbor.jkolaric.eu/tbs/custom-afklm-packages-from-github-actions:1.1
+            harbor.jkolaric.eu/tbs/custom-afklm-packages-from-github-actions::${{ github.sha }}
