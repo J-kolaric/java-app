@@ -68,7 +68,6 @@ jobs:
           namespace: default
           manifests: |
             kubernetes/deployment.yaml
-            #kubernetes/ingress.yaml
             kubernetes/service.yaml
           images: |
             harbor.jkolaric.eu/tbs/github-actions-did-it-twice:1.1
