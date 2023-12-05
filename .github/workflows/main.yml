@@ -33,7 +33,9 @@ jobs:
           ca_cert: ${{ secrets.CA_CERT }}
           namespace: ${{ secrets.NAMESPACE }}
           # image config
-          destination: harbor.jkolaric.eu/tbs/github-actions-did-it
+          destination: harbor.jkolaric.eu/tbs/github-actions-did-it-twice
+          # cluster builder config
+          clusterbuilder: custom-afklm-packages
           #env: |
             #BP_JAVA_VERSION=17
     
