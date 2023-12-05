@@ -19,7 +19,7 @@ spec:
         app: github-action-deployment
     spec:
       containers:
-      - image: harbor.jkolaric.eu/tbs/github-actions-did-it-twice:1.1
-        name: github-actions-did-it-twice
+      - image: harbor.jkolaric.eu/tbs/custom-afklm-packages-from-github-actions:latest
+        name: custom-afklm-packages-from-github-actions
         resources: {}
 status: {}

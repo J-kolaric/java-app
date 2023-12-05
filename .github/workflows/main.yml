@@ -70,4 +70,4 @@ jobs:
             kubernetes/deployment.yaml
             kubernetes/service.yaml
           images: |
-            harbor.jkolaric.eu/tbs/custom-afklm-packages-from-github-actions::${{ github.sha }}
+            harbor.jkolaric.eu/tbs/custom-afklm-packages-from-github-actions:${{ github.sha }}
